@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Todo app">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todos</title>
+</head>
+<body>
+    <header>
+        <h1>Todos</h1>
+        
+    </header>
+    <main>
+       
+        <section class="task-list" onload="populate()">
+
+        </section>
+
+        <section id="btns">
+            <p id="remaining"></p>
+            <button class="center-btn" type="button" onclick="showAll()">All</button>
+            <button class="center-btn" type="button" onclick="showActive()">Active</button>
+            <button class="center-btn" type="button" onclick="showCompleted()">Completed</button>
+        </section>
+
+        <form>
+            <input type="text" id="inputbox" name="inputbox">
+            <button type="button" onclick="getTask()">+</button>
+        </form>
+    </main>
+    <script src="js/todo.js"></script>
+</body>
+</html>
