@@ -12,7 +12,8 @@ country.addEventListener("keypress", function(event){
             <h2 class = "center">${data[0].name.common}</h2>
             <p class = "center">Capital: ${data[0].capital[0]}</p>
             <p class = "center">Population: ${data[0].population}</p>
-            <p class = "center">Continent: ${data[0].region}</p>`;
+            <p class = "center">Region: ${data[0].region}</p>
+            <p class = "center">Common Languages: ${Object.values(data[0].languages).toString().split(",").join(", ")}</p>`;
         }).catch(() => {
             if(countryName.length == 0){
                 result.innerHTML = `<p class = "center vailidity">Please enter a valid Country</p>`;
