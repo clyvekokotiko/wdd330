@@ -1,0 +1,52 @@
+body{
+    background: lightblue;
+}
+#input-container{
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#country_text{
+    
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.62em;
+    width: 40vw;
+    height: 5vh;
+    
+}
+
+h1{
+    text-align: center;
+}
+.flags{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 0.8%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.vailidity{
+    color: red;
+    font-size: 1rem;
+}
