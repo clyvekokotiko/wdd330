@@ -10,11 +10,11 @@ country.addEventListener("keypress", function(event){
             console.log(data)
             result.innerHTML = `<img src = "${data[0].flags.svg}" class = "flags">
             <h2 class = "center">${data[0].name.common}</h2>
-            <p class = "center">Capital: ${data[0].capital.toString().split(",").join(", ")}</p>
-            <p class = "center">Population: ${data[0].population}</p>
-            <p class = "center">Currency : ${data[0].currencies[Object.keys(data[0].currencies)].name}, ${data[0].currencies[Object.keys(data[0].currencies)].symbol}, ${Object.keys(data[0].currencies)[0]}</p>
-            <p class = "center">Region: ${data[0].region}</p>
-            <p class = "center">Common Languages: ${Object.values(data[0].languages).toString().split(",").join(", ")}</p>`;
+            <p class = "center"><b>Capital</b>: ${data[0].capital.toString().split(",").join(", ")}</p>
+            <p class = "center"><b>Population</b>: ${data[0].population}</p>
+            <p class = "center"><b>Currency</b>: ${data[0].currencies[Object.keys(data[0].currencies)].name}, ${data[0].currencies[Object.keys(data[0].currencies)].symbol}, ${Object.keys(data[0].currencies)[0]}</p>
+            <p class = "center"><b>Region</b>: ${data[0].region}</p>
+            <p class = "center"><b>Common Languages</b>: ${Object.values(data[0].languages).toString().split(",").join(", ")}</p>`;
         }).catch(() => {
             if(countryName.length == 0){
                 result.innerHTML = `<p class = "center vailidity">Field can't be empty</p>`;
